@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 85%;
+    background-color: #0a0a0a;
+    color: rgb(14, 2, 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.movie-container{
+    margin: 20px 0;
+}
+.seat1 > .checkbox{
+    width: 17px;
+    height: 25px;
+}
+  
+.movie-container select{
+    background-color: white;
+    border: 0;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    appearance: none;
+}
+.room-container{
+    margin-bottom: 60px;
+    width: 48%;
+    height: 415px;
+    margin-left: 5px;
+    background-color: rgba(66, 62, 62, 0.625);
+   border-radius: 2px;
+}
+
+.seat{
+    background-color: #f4f4f9;
+    position: relative;
+    margin-left: 25px;
+    height: 20px;
+    width: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+ 
+}
+.seat1{
+  background-color: #f4f4f9;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  padding-bottom: 29px;
+  margin-left: 25px;
+  margin-bottom: 60px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+
+}
+
+.seatDisplay{
+    display: none;
+}
+
+
+
+.seat.selected{
+    background-color: #3e1ce9;
+}
+.seat.occupied{
+    background-color: rgb(231, 14, 14);
+}
+
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.showcase{
+  width: 50%;
+  background-color: rgba(66, 62, 62, 0.625);
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: rgb(244, 239, 239);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.showcase li{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.showcase li small{
+    margin-left: 5px;
+}
+
+.row{
+    display: flex;
+    height: 30px;
+    position: relative;
+   
+
+    /* margin-left: -5%; */
+}
+.row1{
+  position: relative;
+  display: flex;
+  height: 10px;
+  
+ 
+}
+.row1 > .seat1::after{
+    background-color: #3e1ce9;
+}
+.row2{
+  position: relative;
+  display: flex;
+  height: 10px;
+ margin-bottom: 40px;
+
+  /* margin-left: -5%; */
+}
+
+h1{
+    margin: 0;
+    position: relative;
+    /* left: -12%; */
+    font-size: 1.5em;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    left: 11%;
+}
+.row-no{
+    width: 550px;
+    height: 20px;
+    margin: 5px;
+}
+.room{
+    position: relative;
+    margin-left: 10px;
+    width: 1000px;
+}
+
+.table{
+    height: 30px;
+    width: 94%;
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: rgba(169, 120, 74, 0.494);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 3px 10px rgba(9, 9, 9, 0.7);
+    transform: rotateX(-45deg);
+    -webkit-transform: rotateX(-45deg);
+    -moz-transform: rotateX(-45deg);
+    -ms-transform: rotateX(-45deg);
+    -o-transform: rotateX(-45deg);
+}
+.table-direction{
+    display: flex;
+    justify-content: center;
+    margin: -15px 0 15px;
+}
+
+p.text{
+    margin: 55px 0;
+    font-size: 24px;
+}
+p.text span{
+    color: #6feaf6;
+}
+.top{
+  position: relative;
+margin-top: 80px;
+margin-right: 90px;
+}
+
+.button {
+    background-color: #110ded;
+    color: white;
+    margin-left: 15px;
+}

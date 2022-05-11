@@ -1,0 +1,22 @@
+#table {
+    width: 100%;
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    margin-right: 20%;
+    height: auto;
+}
+
+thead {
+    color: white;
+}
+
+tr {
+    color: white;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: transparent;
+}
