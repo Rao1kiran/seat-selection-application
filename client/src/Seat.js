@@ -24,8 +24,7 @@ var month = "0"+(t.getMonth()+1);
     var date = "0"+t.getDate();
     month = month.slice(-2);
     date = date.slice(-2);
-     var currentdate = "2022-05-17";
-     //t.getFullYear()+"-"+month+"-"+date;
+     var currentdate = t.getFullYear()+"-"+month+"-"+date;
 
      var t = new Date();
     t.setDate(t.getDate() + 5); 
